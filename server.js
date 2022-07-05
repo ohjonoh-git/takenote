@@ -9,4 +9,8 @@ app.use(express.json());
 // Connecting on the port
 app.listen(port, (req, res) => {
   console.log(`Listening on port ${port}`);
-});``
+});
+
+app.get('/hello', (req, res) => {
+  res.send('Heyo world');
+})
